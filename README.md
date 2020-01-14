@@ -1,68 +1,153 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Informações iniciais:
+Este projeto foi proposto pela LaboratóriaBR e foi desenvolvido individualmente pela aluna Giovanna Lima.
+##Tecnologias utilizadas:  
+React, Firebase, MaterialUI, SweetAlert2,
 
-## Available Scripts
+# Definição de produto
+O "BurgerQueen" foi desenvolvido para uma hambúrgueria 24h, com interesse em aumentar a sua produtividade através da tecnologia.
 
-In the project directory, you can run:
+#Objetivos:  
+> Somos **Burger Queen**, um fast food 24hrs.
+>
+>A nossa proposta de serviço 24 horas foi muito bem recebida e, para continuar a
+>crescer, precisamos de um sistema que nos ajude a receber pedidos de nossos
+>clientes.
+>
+>Nós temos 2 menus. Um muito simples para o café da manhã:
+>
+>| Ítem                      |Preço R$|
+>|---------------------------|------|
+>| Café americano            |    5 |
+>| Café com leite            |    7 |
+>| Misto Quente              |   10 |
+>| Suco de fruta natural     |    7 |
+>
+>E outro menu para o resto do dia:
+>
+>| Ítem                      |Preço |
+>|---------------------------|------|
+>|**Hambúrgueres**           |   **R$**   |
+>|Hambúrguer simples         |    10|
+>|Hambúrguer duplo           |    15|
+>|**Acompanhamentos**        |   **R$**   |
+>|Batata frita               |     5|
+>|Anéis de cebola            |     5|
+>|**Bebidas**                |   **R$**   |
+>|Água 500ml                 |     5|
+>|Água 750ml                 |     7|
+>|Refrigerante 500ml         |     7|
+>|Refrigerante 750ml         |    10|
+>
+>**Importante:** Os clientes podem escolher entre hambúrgueres de carne bovina,
+>frango ou vegetariano. Além disso, por um adicional de R$ 1,00 , eles podem
+>adicionar queijo ou ovo.
+>
+>Nossos clientes são bastante indecisos, por isso é muito comum que eles mudem o
+>seu pedido várias vezes antes de finalizar.
 
-### `npm start`
+A interface deve mostrar os dois menus (café da manhã e restante do dia), cada
+um com todos os seus _produtos_. O usuário deve poder escolher que _produtos_
+adicionar e a interface deve mostrar o _resumo do pedido_ com o custo total.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Histórias de Usuário  
+#### [História de usuário 1] Garçom/Garçonete deve poder anotar o seu pedido
 
-### `npm test`
+Eu como garçom/garçonete quero poder anotar o meu pedido saber o valor de cada 
+produto e poder enviar o pedido para a cozinha para ser preparado.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Critérios de aceitação
 
-### `npm run build`
+O que deve acontecer para satisfazer as necessidades do usuário?
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Anotar o nome e mesa.
+* Adicionar produtos aos pedidos.
+* Excluir produtos.
+* Ver resumo e o total da compra.
+* Enviar o pedido para a cozinha (guardar em algum banco de dados).
+* Funcionar bem e se adequar a um _tablet_.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+##### Definição de pronto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O acordado abaixo deve acontecer para dizer que a história está terminada:
 
-### `npm run eject`
+* Você fez _testes_ de usabilidade e incorporou o _feedback_ do usuário.
+* Você deu deploy de seu aplicativo.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+***
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### [História de usuário 2] Chefe de cozinha deve ver os pedidos
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Eu como chefe de cozinha quero ver os pedidos dos clientes em ordem, poder marcar que estão prontos e poder notificar os garçons/garçonetes que o pedido está pronto para ser entregue ao cliente.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+##### Critérios de aceitação
 
-## Learn More
+* Ver os pedidos à medida em que são feitos.
+* Marcar os pedidos que foram preparados e estão prontos para serem servidos.
+* Ver o tempo que levou para preparar o pedido desde que chegou, até ser marcado como concluído.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##### Definição de pronto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Você fez _testes_ de usabilidade e incorporou o _feedback_ do usuário.
+* Você deu deploy de seu aplicativo.
 
-### Code Splitting
+***
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+#### [História de usuário 3] Garçom/Garçonete deve ver os pedidos prontos para servir
 
-### Analyzing the Bundle Size
+Eu como garçom/garçonete quero ver os pedidos que estão prontos para entregá-los rapidamente aos clientes.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+##### Critérios de aceitação
 
-### Making a Progressive Web App
+* Ver a lista de pedidos prontos para servir.
+* Marque os pedidos que foram entregues.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+##### Definição de pronto
 
-### Advanced Configuration
+* Você fez _testes_ de usabilidade e incorporou o _feedback_ do usuário.
+* Você deu deploy de seu aplicativo.
+* Os dados devem ser mantidos intactos, mesmo depois que um pedido terminado. Tudo isso para poder ter estatísticas no futuro.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+***
 
-### Deployment
+#### [História de usuário 4] Usuário deve ter seu perfil (login/senha) para acessar o sistema.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Eu como funcionário do restaurante quero entrar na plataforma e ver apenas a tela importante para o meu trabalho.
 
-### `npm run build` fails to minify
+##### Critérios de aceitação
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+O que deve acontecer para satisfazer as necessidades do usuário?
+
+* Criar login e senha.
+* Criar tipo de usuário (cozinha / salão).
+* Entrar na tela correta para cada usuário.
+
+##### Definição de pronto
+
+O acordado abaixo deve acontecer para dizer que a história está terminada:
+
+* Você fez testes de usabilidade e incorporou o feedback do usuário.
+* Você deu deploy de seu aplicativo.
+
+***
+
+
+
+## Desenvolvimento do Projeto
+Este projeto foi desenvolvido em 1 mês desde o planejamento inicial, até a entrega do MVP, V1.
+
+No primeiro sprint fiz o curso de ReactNinja.  
+No segundo sprint fiz o login e menu printado na tela.  
+No terceiro sprint recesso.  
+No quarto sprint finalizei as funcionalidades da página do garçom e fiz a página do cozinheiro e entrega do projeto.  
+
+A definição de pronto foi a entrega das tarefas com o layout finalizado e o teste de usabilidade feito.  
+
+
+#Login dos usuários:  
+-garcom@burgerqueen.com  
+senha: 12345678  
+-cozinheiro@burgerqueen.com   
+senha: 12345678    
+-cozinheiro2@burgerqueen.com  
+senha: 12345678  

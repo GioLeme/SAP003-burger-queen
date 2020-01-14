@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #545454;
+};

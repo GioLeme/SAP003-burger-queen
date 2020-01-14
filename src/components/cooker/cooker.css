@@ -1,0 +1,74 @@
+.warning {
+  border: 1px solid #ffcc4d;
+}
+
+.late {
+  border: 1px solid #f57970;
+}
+
+.ok {
+  border: 1px solid #7ed957;
+}
+
+.manager {
+  display: flex;
+  flex-direction: row;
+  background-color: #e7efe1;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 90vh;
+}
+
+.restaurant-manager {
+  margin: 50px 0px 0px 30px;
+  background-color: #fff;
+  height: 70%;
+  width: 500px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.request {
+  height: 75vh;
+}
+
+.product {
+  margin-top: 15px;
+}
+
+.product:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 5px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.options-extras {
+  margin-left: 15px;
+  color: #747474
+}
+
+.lateMessage {
+  color: #f57970;
+}

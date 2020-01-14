@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Rye&display=swap');
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  background-color: #ab5466;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Rye', cursive;
+  color: #fff;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 55px;
+}
+
+.logout {
+  width: 50px;
+}
+
+.button-resume {
+  background-color: #ab5466;
+  color: #fff;
+  font-size: 20px;
+  height: 50px;
+}

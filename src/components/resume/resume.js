@@ -24,11 +24,11 @@ class Resume extends Component {
           <div className="request-resume-container">
             {actualProduct.quantity}
             {actualProduct.name}
-            <div>
+            <div className="margin-left">
               {actualProduct.options
-                ? `'Hambúrguer' ${actualProduct.options}`
+                ? ` de  ${actualProduct.options} `
                 : ""}
-              {actualProduct.extras ? actualProduct.extras.name : ""}
+             <span className="margin-left margin-right">{actualProduct.extras ? `e ${actualProduct.extras.name} extra` : ""}</span>
             </div>
             R${" "}
             {actualProduct.extras

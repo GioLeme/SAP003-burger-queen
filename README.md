@@ -141,8 +141,9 @@ No segundo sprint fiz o login e menu printado na tela.
 No terceiro sprint recesso.  
 No quarto sprint finalizei as funcionalidades da página do garçom e fiz a página do cozinheiro e entrega do projeto.  
 
-A definição de pronto foi a entrega das tarefas com o layout finalizado e o teste de usabilidade feito.  
+A definição de pronto foi a entrega das tarefas com o layout finalizado e o teste de usabilidade feito.
 
+![burgerqueen](https://user-images.githubusercontent.com/50585591/74067285-ad268300-49d7-11ea-8aab-78aff83da74a.gif)
 
 #Login dos usuários:  
 -garcom@burgerqueen.com  

@@ -54,11 +54,11 @@ class CookerComponent extends Component {
       if (request.status === "toDo") {
         return (
           <Button
-            style={{ backgroundColor: "#7ed957", width: "70%" }}
+            style={{ backgroundColor: "#ab5466", width: "70%"}}
             onClick={() => this.updateRequest(request.id, "doing")}
           >
             {" "}
-            Preparar
+            <span style={{ color: "#fff" }}>Preparar</span>
           </Button>
         );
       }
@@ -77,7 +77,7 @@ class CookerComponent extends Component {
             onClick={() => this.updateRequest(request.id, "done")}
           >
             {" "}
-            <CheckCircleOutlineIcon />{" "}
+            Finalizar Preparo 
           </Button>
         );
       }

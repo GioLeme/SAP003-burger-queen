@@ -226,10 +226,11 @@ class Counter extends Component {
                 height: "60vh"
               }}
             >
+              <form onSubmit={this.sendOptionandExtrasToRequest} className='modal-form'>
               <h2 id="transition-modal-title" style={{ textAlign: "center" }}>
                 Opções
               </h2>
-              <form onSubmit={this.sendOptionandExtrasToRequest}>
+                <div className='modal-content'>
                 <div>
                   <p>Hambúrguer:</p>
                   {this.listOptions()}
@@ -238,13 +239,13 @@ class Counter extends Component {
                   <p>Adicionar porR$1,00:</p>
                   {this.listExtras()}
                 </div>
-                <div>
-                  <p>Este pedido só poderá ser removido na página de resumo.</p>
                 </div>
-                <Button disabled={!this.state.checkedOption} type="submit">
-                  {" "}
-                  Pronto !
+                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                  <p>Este pedido só poderá ser removido na página de resumo.</p>
+                <Button disabled={!this.state.checkedOption} type="submit"  style={{ width: "300px", backgroundColor: "#ab5466", marginTop: '10px'}}>
+                  <span style={{ color: "#fff" }}>Pronto !</span>
                 </Button>
+                </div>
               </form>
             </div>
           </Fade>

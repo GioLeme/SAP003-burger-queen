@@ -20,9 +20,12 @@ O "BurgerQueen" é um sistema que foi desenvolvido para uma hamburgueria 24h com
 ## 💅🏻 Layout
 ![print](https://user-images.githubusercontent.com/50585591/78073118-a8969f00-7376-11ea-83f5-5cb21b80820c.png)
 
-
+tela do garçom:  
 ![burgerqueen](https://user-images.githubusercontent.com/50585591/74067285-ad268300-49d7-11ea-8aab-78aff83da74a.gif)
-
+  
+  
+tela do cozinheiro:  
+![Screenshot (1)](https://user-images.githubusercontent.com/50585591/78074903-f234b900-7379-11ea-8fa1-669eb77942fa.png)
 
 ## 🧐 Como rodar o projeto
 - Clone o projeto
